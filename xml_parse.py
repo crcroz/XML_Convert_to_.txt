@@ -1,15 +1,14 @@
 import xml.etree.ElementTree as ET
 import os
-import os.path
 
 '''This is the path to the folder containing all the xml files'''
-directory = r"/Users/connorcrozier/Downloads/permissionsets"
+directory = r"Your path to XML FOLDER GOES HERE"
 
 '''iterate through xml files'''
 for filename in os.listdir(directory):
 
     '''get xml file path here to get root'''
-    mytree = ET.parse(f"/Users/connorcrozier/Downloads/permissionsets/{filename}")
+    mytree = ET.parse(f"Your path to XML FOLDERE GOES HERE/{filename}")
     myroot = mytree.getroot()
 
     '''creates the title and creates the txt file'''
